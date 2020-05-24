@@ -1,9 +1,9 @@
 @charset 'utf-8';
- 
+
 @import "~bulma/sass/utilities/functions";
- 
+
 @import "./styles/custom_colors.scss";
- 
+
 $custom-colors: (
   "custom-green-darker": ($custom-green-darker),
   "custom-green-lighter": ($custom-green-lighter),
@@ -12,10 +12,10 @@ $custom-colors: (
   "custom-black": ($custom-black),
   "custom-orange": ($custom-orange),
 );
- 
+
 // Import Bulma styles
 @import "~bulma/bulma";
- 
+
 // Import rbx style fixes (**very simple**)
 @import "~rbx/rbx";
 
@@ -26,4 +26,13 @@ $custom-colors: (
   border: 1px dashed $custom-gray;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.modal_root {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 2;
 }
