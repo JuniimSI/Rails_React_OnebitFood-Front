@@ -12,7 +12,7 @@ class AddressModal extends Component {
   render() {
     return (
       <Column.Group centered>
-        <Column size="3" mobile={{ 'size': 10, 'offset': 1 }}>
+        <Column size="5" mobile={{ 'size': 10, 'offset': 1 }}>
           <Box>
             <Column.Group>
               <Column size={12} textAlign="right">
